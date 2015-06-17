@@ -1,0 +1,231 @@
+/*HEADER AND FOOTER */
+body{
+    background-image: url("images/background2.jpg");
+}
+body > header {
+    margin: 0px 5px 10px 0px;
+    height: 100px;
+    width: 100%;
+}
+.entry-header {
+    padding-top: 0px;
+    width:100%;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    /*z-index: 9000*/
+}
+.entry-header .inner {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    text-align: left;
+   /*margin: 30px auto 0 10px;*/
+    /*width: 100%;*/
+}
+#softuni-logo img {
+    width: 100px;
+    height: 100px;
+}
+#team {
+    width: 125px;
+    height: 100px;
+}
+#team-logo img {
+    width: 125px;
+    height: 100px;
+}
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/I%20tell%20you%20all%20my%20secrets%20DEMO.ttf');
+}
+@font-face {
+    font-family: 'MonsterFont';
+    src: url('fonts/UNLEASH%20THE%20BEAST.ttf');
+}
+#name{
+    margin-top: 20px;
+    color: #78ff1d;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: MonsterFont;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    font-family: CustomFont;
+    font-size: 15px;
+}
+#cssmenu {
+    width: 85%;
+    height: 60px;
+    padding-bottom: 4px;
+    margin-left: 3em;
+    margin-top: 1.5em;
+    margin-right: 3em;
+}
+#cssmenu .bg-lang {
+    display: none;
+}
+
+#cssmenu.align-right ul li {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+    border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one {
+    height: 10px;
+    background: #78ff1d;
+}
+#cssmenu #bg-two {
+    height: 59px;
+    z-index: 2;
+}
+#cssmenu #bg-three {
+    bottom: 4px;
+    height: 55px;
+    z-index: 3;
+    background: #222222;
+    background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+    background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+    background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+    background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+    bottom: 4px;
+    height: 55px;
+    z-index: 4;
+}
+#cssmenu ul {
+    height: 59px;
+}
+#cssmenu ul li {
+    float: left;
+    margin-right: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    z-index: 5;
+}
+#cssmenu ul li a {
+    height: 10px;
+    border: 2px solid black;
+    padding: 24px 24px 20px 24px;
+    border-radius: 5em 1em 5em 1em;
+    color: #494949;
+    font-size: 22px;
+    background-color: #78ff1d;
+    text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+    border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu.active {
+    background: #010508;
+
+}
+#cssmenu ul li:hover {
+
+}
+#cssmenu ul li a:hover{
+    display: block;
+    background-color: #494949;
+    color: #78ff1d;
+}
+#name{
+    text-align: center;
+    max-width: 220px;
+}
+
+
+/*footer styling*/
+.footer {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.5em;
+    width: 100%;
+    background-color: #78ff1d;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 30px 0 50px;
+    box-sizing: border-box;
+}
+.btns {
+    display: flex;
+    flex-flow: column;
+    /*border: 1px solid #ffffff;*/
+    width: 100px;
+    justify-content: flex-start;
+
+}
+.btns a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+    /*border: 2px solid #ff9b18;*/
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.btns a img {
+    width: 100%;
+    height: 100%;
+}
+.links {
+    /*border: 1px solid #ffffff;*/
+    margin-bottom: 30px;
+}
+
+.links > h1 {
+    color: #010508;
+    font-weight: bold;
+}
+.links ul a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 25px;
+}
+.links:nth-of-type(4) {
+    max-width: 300px;
+}
+.logo-divs {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid #ffffff;*/
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.logo-divs img {
+    width: 100%;
+}
+

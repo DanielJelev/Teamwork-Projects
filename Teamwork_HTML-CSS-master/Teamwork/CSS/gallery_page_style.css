@@ -1,0 +1,81 @@
+/*Gallery style*/
+body {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #000000;
+    margin-top: 120px;
+
+}
+/*make header fixed just for the gallery_page*/
+header.entry-header {
+    padding-top: 0px;
+    width:99%;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    /*z-index: 9000*/
+}
+/*image container*/
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+/*link diff images to the image container*/
+#slide-1 .bcg {
+    background-image: url("../images/pictures/picture1.jpg");
+    background-size: contain;
+}
+#slide-2 .bcg {
+    background-image: url("../images/pictures/picture20.jpg");
+    background-size: contain;
+}
+#slide-3 .bcg {
+    background-image: url("../images/pictures/picture3.jpg");
+    background-size: contain;
+}
+#slide-4 .bcg {
+    background-image: url("../images/pictures/picture4.jpg");
+    background-size: contain;
+}
+#slide-5 .bcg {
+     background-image: url("../images/pictures/picture5.jpg");
+     background-size: contain;
+ }
+#slide-6 .bcg {
+    background-image: url("../images/pictures/picture6.jpg");
+    background-size: contain;
+}
+#slide-7 .bcg {
+    background-image: url("../images/pictures/register.jpg");
+    background-size: contain;
+}
+#slide-8 .bcg {
+    background-image: url("../images/pictures/picture11.png");
+    background-size: contain;
+}
+#slide-9 .bcg {
+    background-image: url("../images/pictures/picture18.jpg");
+    background-size: contain;
+}
+#slide-10 .bcg {
+    background-image: url("../images/pictures/picture19.jpg");
+    background-size: contain;
+}
+
+
+#down-arrow {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 48%;
+    background: url("../images/down-arrow.png") 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 999999;
+}
